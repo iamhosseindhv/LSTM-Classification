@@ -6,13 +6,32 @@ Here you you can find some datails about steps taken to make model with **96.7% 
 
 
 ## Table of Contents
-  1. [Installation](#installation)
+  1. [Usage](#usage)
   1. [Data Exploration](#data-exploration)
   1. [Preprocessing](#preprocessing)
   1. [Training the model using Keras](#training-the-model-using-keras)
   1. [Results](#results)
 
-## Installation
+## Usage
+Clone the repo:
+```
+git clone https://github.com/iamhosseindhv/LSTM-Classification.git lstm
+cd lstm
+```
+In order to run the scripts, you have to have datasets downloaded. You can login to your Kaggle account, download the following files, and put them in the same directory you have cloned this repo in:
+* [training dataset](https://www.kaggle.com/c/8076/download/train.csv.zip)
+* [test dataset](https://www.kaggle.com/c/8076/download/test.csv.zip)
+* [sample submission file](https://www.kaggle.com/c/8076/download/sample_submission.csv.zip)
+
+Alternatively, you can enter the following command, where `USERNAME` and `PASSWORD` is your Kaggle account username and password:
+```
+python download_datasets.py USERNAME PASSWORD
+```
+Now you can run the script:
+```
+python lstm_classifier.py
+```
+
 **Prerequisites:** In case you want to clone the repo and play with stuff, you need the following installed:
 * [TensorFlow](https://www.tensorflow.org/install/)
 * [Keras](https://keras.io/#installation)

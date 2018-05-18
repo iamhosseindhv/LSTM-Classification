@@ -23,10 +23,6 @@ In order to run the scripts, you have to have datasets downloaded. You can login
 * [test dataset](https://www.kaggle.com/c/8076/download/test.csv.zip)
 * [sample submission file](https://www.kaggle.com/c/8076/download/sample_submission.csv.zip)
 
-Alternatively, you can enter the following command, where `USERNAME` and `PASSWORD` is your Kaggle account username and password:
-```
-python download_datasets.py USERNAME PASSWORD
-```
 Now you can run the script:
 ```
 python lstm_classifier.py

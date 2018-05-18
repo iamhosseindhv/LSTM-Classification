@@ -6,11 +6,18 @@ Here you you can find some datails about steps taken to make model with **96.7% 
 
 
 ## Table of Contents
+  1. [Installation](#installation)
   1. [Data Exploration](#data-exploration)
   1. [Preprocessing](#preprocessing)
   1. [Training the model using Keras](#training-the-model-using-keras)
   1. [Results](#results)
 
+## Installation
+**Prerequisites:** In case you want to clone the repo and play with stuff, you need the following installed:
+* [TensorFlow](https://www.tensorflow.org/install/)
+* [Keras](https://keras.io/#installation)
+* [Pandas](https://pandas.pydata.org)
+* Numpy
 
 ## Data Exploration
 First, let's take a look at our train file: (sorry for the bad language 🤨)
@@ -130,7 +137,7 @@ def clean(comment):
 ## Training the model using Keras
 
 ```python
-# Complete code at lstm.py
+# Complete code at lstm_classifier.py
 
 list_classes = ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]
 y = train[list_classes].values

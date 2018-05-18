@@ -150,6 +150,7 @@ def clean(comment):
 </br>
 
 ## Training the model using Keras
+Comments in the code contain a short description of what's being done in each step.
 
 ```python
 # Complete code at lstm_classifier.py

@@ -13,9 +13,9 @@ from keras import initializers, regularizers, constraints, optimizers, layers
 
 start = time.time()
 
-train = pd.read_csv('datasets/train.csv', encoding='latin-1')
-test = pd.read_csv('datasets/test.csv', encoding='latin-1')
-submission = pd.read_csv('datasets/sample_submission.csv')
+train = pd.read_csv('train.csv', encoding='latin-1')
+test = pd.read_csv('test.csv', encoding='latin-1')
+submission = pd.read_csv('sample_submission.csv')
 
 print('Reading the dataset...')
 list_classes = ["toxic", "severe_toxic", "obscene", "threat", "insult", "identity_hate"]

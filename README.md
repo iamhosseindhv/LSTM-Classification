@@ -243,3 +243,5 @@ Hossein Dehnokhalaji
 <img src="https://fuckdistance.herokuapp.com/githubcounter" alt="" width="1" height="1"/>
 
 
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

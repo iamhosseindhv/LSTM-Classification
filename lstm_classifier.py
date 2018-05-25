@@ -54,7 +54,8 @@ x = Dropout(0.1)(x)
 x = Dense(6, activation="sigmoid")(x)
 
 model = Model(inputs=inp, outputs=x)
-
+# we use binary_crossentropy because of binary classification
+# optimise loss by Adam optimiser
 model.compile(loss='binary_crossentropy',
               optimizer='adam',
               metrics=['accuracy'])

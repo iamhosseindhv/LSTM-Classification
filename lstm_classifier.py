@@ -35,19 +35,22 @@ X_test = pad_sequences(list_tokenized_test, maxlen=maxlen)
 # maxlen=200 as defined earlier
 inp = Input(shape=(maxlen, ))
 
+# size of the vector space
 embed_size = 128
 x = Embedding(max_features, embed_size)(inp)
 
-x = LSTM(60, return_sequences=True,name='lstm_layer')(x)
-
+output_dimention = 60
+x = LSTM(output_dimention, return_sequences=True,name='lstm_layer')(x)
+# reduce dimention
 x = GlobalMaxPool1D()(x)
-
+# disable 10% precent of the nodes
 x = Dropout(0.1)(x)
-
+# pass output through a RELU function
 x = Dense(50, activation="relu")(x)
-
+# another 10% dropout
 x = Dropout(0.1)(x)
-
+# pass the output through a sigmoid layer, since 
+# we are looking for a binary (0,1) classification 
 x = Dense(6, activation="sigmoid")(x)
 
 model = Model(inputs=inp, outputs=x)
